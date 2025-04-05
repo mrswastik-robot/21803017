@@ -2,7 +2,7 @@ import { Request, Response } from 'express';
 import { getTopUsers } from '../services/userService';
 
 // Get top users with the highest number of posts
-export const getTopUsersController = async (req: Request, res: Response): Promise<void> => {
+export const getTopUsersController = async (req: Request, res: Response) => {
   try {
     const topUsers = await getTopUsers(5); // Get top 5 users
     res.json({ users: topUsers });

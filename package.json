@@ -1,0 +1,17 @@
+{
+  "name": "affordmed-assign",
+  "version": "1.0.0",
+  "description": "AffordMed assignment with Task-1 (Backend) and Task-2 (Frontend)",
+  "scripts": {
+    "backend": "cd Task-1 && npm run dev",
+    "frontend": "cd Task-2 && npm run dev",
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\"",
+    "install-all": "npm install && cd Task-1 && npm install && cd ../Task-2 && npm install"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  }
+} 
